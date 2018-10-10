@@ -67,8 +67,14 @@ int main(int argc, char *argv[])
     app.setApplicationName("cube");
     app.setApplicationVersion("0.1");
 #ifndef QT_NO_OPENGL
-    MainWidget widget(0,10);    // 10 est le nombre de fps
+    MainWidget widget(0,1);    // 1 est le nombre de fps
+    MainWidget widget2(0,10);    // 10 est le nombre de fps
+    MainWidget widget3(0,100);    // 100 est le nombre de fps
+    MainWidget widget4(0,1000);    // 1000 est le nombre de fps
     widget.show();
+    widget2.show();
+    widget3.show();
+    widget4.show();
 #else
     QLabel note("OpenGL Support required");
     note.show();
